@@ -25,7 +25,7 @@ install: $(TARGET)
 	install $(TARGET) $(DESTINATION)
 	test -z $(HEADER_DESTINATION) || mkdir -p $(HEADER_DESTINATION)
 	install $(HEADER) $(HEADER_DESTINATION)
-	ldconfig $(DESTINATION)
+	/sbin/ldconfig -n $(DESTINATION)
 
 clean:
 	rm -f $(TARGET) *.o *~
