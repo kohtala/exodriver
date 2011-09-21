@@ -1,0 +1,6 @@
+Any user of the device needs to be made member of group labjack.
+
+$ sudo /usr/sbin/usermod -A labjack <user>
+
+User needs to log in after the membership change to gain the group access.
+User can verify group membership using command groups or id.
